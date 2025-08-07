@@ -1,7 +1,9 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/Global/Navbar/Navbar";
 import { Belleza, Poppins } from "next/font/google";
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const belleza = Belleza({
   variable: "--font-belleza",
