@@ -8,7 +8,7 @@ const FurnitureDesigning = () => {
     <section className="py-[80px] px-4 bg-[#F6F4EE]">
       <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
         <div className="flex justify-center items-center ">
-          <div className="max-w-[811px] flex flex-col gap-3.5">
+          <div className="max-w-[1035px] flex flex-col gap-3.5">
             <h2 className="text-6xl font-belleza text-[#191919] text-center">
               Furniture Designing
             </h2>

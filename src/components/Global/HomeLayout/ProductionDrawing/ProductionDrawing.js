@@ -1,58 +1,83 @@
-import React from 'react'
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow } from "swiper/modules";
 
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
 
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-
-const settings = {
-dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3, // Default number of slides visible
-    slidesToScroll: 1,
-
-    autoplay: true,
-    autoplaySpeed: 2000,
-};
+import Image from "next/image";
+import ArrowBtn from "./ArrowBtn";
 
 const images = [
-  '/images/global/image 88.png',
-  '/images/global/image 88.png',
-  '/images/global/image 88.png',
- 
+  "/images/global/image 88.png",
+  "/images/global/image 88.png",
+  "/images/global/image 88.png",
+  "/images/global/image 88.png",
+  "/images/global/image 88.png",
+  "/images/global/image 88.png",
 ];
 
 const ProductionDrawing = () => {
-  return (
-   <section className=" py-[80px] px-4 bg-[#F6F4EE] overflow-hidden">
-       <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
-         <div className="flex justify-center">
-           <h2 className='text-6xl font-belleza text-[#191919] text-center"'>
-            Production Drawing
-           </h2>
-         </div>
-<div className=''>
-<Slider {...settings}>
-{images.map((img , index) => (
-  <div className='px-2  ' key={index}>
-    <div className='relative w-[840px] min-h-[592px]'>
-      <Image
-      src={img}
-      width={840}
-      height={400}
-      alt='production '
-      />
-    </div>
-  </div>
-))}
-</Slider>
-</div>
-  
-         
-       </div>
-     </section>
-  )
-}
+  const swiperRef = useRef(null);
 
-export default ProductionDrawing
+  return (
+    <section className=" py-[80px] px-4 bg-[#F6F4EE] overflow-hidden">
+      <div className="max-w-[1280px] m-auto flex flex-col gap-[60px] overflow-hidden">
+        <div className="flex justify-center">
+          <h2 className='text-6xl font-belleza text-[#191919] text-center"'>
+            Production Drawing
+          </h2>
+        </div>
+
+        <Swiper
+          effect={"coverflow"}
+         
+          slidesPerView="auto"
+          spaceBetween={200}
+          centeredSlides={true}
+          loop={true}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: false,
+          }}
+          modules={[EffectCoverflow]}
+          className="w-full"
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+        >
+          {images.map((img, index) => (
+            <SwiperSlide
+              key={index}
+              className="!w-[840px] h-[592px] bg-white rounded-xl overflow-hidden"
+            >
+              <Image
+                src={img}
+                alt={`Slide ${index}`}
+                width={300}
+                height={400}
+                className="object-cover w-full h-full"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div className="flex justify-center items-center gap-2">
+          <ArrowBtn
+            text={"<"}
+            variant="Brown"
+            onClick={() => swiperRef.current?.slidePrev()}
+          />
+          <ArrowBtn
+            text={">"}
+            variant="Brown"
+            onClick={() => swiperRef.current?.slideNext()}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProductionDrawing;
