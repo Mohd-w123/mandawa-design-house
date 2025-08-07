@@ -5,11 +5,11 @@ import Image from "next/image";
 const WoodenMachinery = () => {
   return (
     <section>
-      <LinearBgHeading text={"MANUFACTURING SECTIONS"} />
+      <LinearBgHeading text={"WOODEN MACHINERY"} />
       <div className=' py-[80px] px-4"'>
-        <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
+        <div className="max-w-[1280px] m-auto flex flex-col gap-[60px] ">
           <div className="grid grid-cols-2 gap-10">
-            <div className="relative group flex flex-col gap-[30px]">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 28.png"}
@@ -28,7 +28,7 @@ const WoodenMachinery = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px] ">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 51.png"}
@@ -49,7 +49,7 @@ const WoodenMachinery = () => {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-10">
-            <div className="relative group flex flex-col gap-[30px]">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 30.png"}
@@ -68,7 +68,7 @@ const WoodenMachinery = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px]">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 23.png"}
@@ -87,7 +87,7 @@ const WoodenMachinery = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px] ">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 32.png"}
@@ -108,7 +108,7 @@ const WoodenMachinery = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-10">
-            <div className="relative group flex flex-col gap-[30px]">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 34.png"}
@@ -127,7 +127,7 @@ const WoodenMachinery = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px] ">
+            <div className="relative group flex flex-col gap-[30px]  cursor-pointer">
               <div className="relative  min-h-[440px]">
                 <Image
                   src={"/images/global/image 33.png"}

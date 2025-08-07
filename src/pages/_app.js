@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/Global/Navbar/Navbar";
 import { Belleza, Poppins } from "next/font/google";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Footer from "@/components/Global/Footer/Footer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const belleza = Belleza({
   variable: "--font-belleza",
@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }) {
     <main className={`${belleza.variable} ${poppins.variable}`}>
       <Navbar />
       <Component {...pageProps} />
+      <Footer/>
     </main>
   );
 }

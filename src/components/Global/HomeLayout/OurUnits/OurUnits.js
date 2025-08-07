@@ -9,7 +9,7 @@ const OurUnits = () => {
       <div className=' py-[80px] px-4"'>
         <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
           <div className="grid grid-cols-2 gap-10">
-            <div className="relative group flex flex-col gap-[30px] ">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer ">
               <div className="relative min-h-[440px]">
                 <Image
                   src={"/images/global/image 10.png"}
@@ -28,7 +28,7 @@ const OurUnits = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px] ">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer ">
               <div className="relative min-h-[440px]">
                 <Image
                   src={"/images/global/image 12.png"}
@@ -47,7 +47,7 @@ const OurUnits = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px]">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative min-h-[440px]">
                 <Image
                   src={"/images/global/image 14.png"}
@@ -66,7 +66,7 @@ const OurUnits = () => {
                 </p>
               </div>
             </div>
-            <div className="relative group flex flex-col gap-[30px] ">
+            <div className="relative group flex flex-col gap-[30px] cursor-pointer">
               <div className="relative min-h-[440px]">
                 <Image
                   src={"/images/global/image 16.png"}

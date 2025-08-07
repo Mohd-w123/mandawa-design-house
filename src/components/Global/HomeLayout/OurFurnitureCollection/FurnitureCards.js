@@ -3,7 +3,7 @@ import React from "react";
 
 const FurnitureCards = ({ cards }) => {
   return (
-    <div className="flex flex-col gap-3.5">
+    <div className="flex flex-col gap-3.5 cursor-pointer">
       <div className="">
         <Image src={cards.image} width={413} height={426} alt="Products" />
       </div>

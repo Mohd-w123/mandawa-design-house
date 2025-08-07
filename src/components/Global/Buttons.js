@@ -6,7 +6,7 @@ const Button = ({ text, onClick, variant = "default" }) => {
     <button
       onClick={onClick}
       className={clsx(
-        "md:px-8 px-4 md:py-3 py-2 transition font-medium w-fit",
+        "md:px-8 px-4 md:py-3 py-2 transition font-medium w-fit cursor-pointer",
         {
           "bg-[#6E2F1B] text-[#FAFAFA] hover:bg-[#191919]": variant === "Brown",
           "bg-white text-[#1D2130] hover:bg-[#FFD12D] hover:text-black relative right-2":
