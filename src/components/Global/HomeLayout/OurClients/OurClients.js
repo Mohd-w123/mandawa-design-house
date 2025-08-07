@@ -10,7 +10,7 @@ const OurClients = () => {
             Our Clients
           </h2>
         </div>
-        <div className="grid grid-cols-6 gap-10">
+        <div className="grid grid-cols-6 gap-10 justify-items-center ">
           <div>
             <Image
               src={"/images/global/imageClient1.png"}
@@ -27,9 +27,10 @@ const OurClients = () => {
               alt="client company logo"
             />
           </div>
-          <div>
+     
+             <div>
             <Image
-              src={"/images/global/imageClient3.png"}
+              src={"/images/global/imageClient5.png"}
               width={160}
               height={160}
               alt="client company logo"
@@ -43,17 +44,18 @@ const OurClients = () => {
               alt="client company logo"
             />
           </div>
+        
           <div>
             <Image
-              src={"/images/global/imageClient5.png"}
+              src={"/images/global/imageClient6.png"}
               width={160}
               height={160}
               alt="client company logo"
             />
           </div>
-          <div>
+              <div>
             <Image
-              src={"/images/global/imageClient6.png"}
+              src={"/images/global/imageClient3.png"}
               width={160}
               height={160}
               alt="client company logo"

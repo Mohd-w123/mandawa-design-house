@@ -6,7 +6,8 @@ import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-[2] font-poppins">
+    <header className="shadow-md sticky top-0 z-[2]  bg-white " >
+    <nav className="max-w-[1400px] m-auto font-poppins">
       <div className="md:mx-[40px] mx-5 py-2 sm:py-3 lg:py-[14px]">
         <div className="flex justify-between h-16 items-center">
             <MobileMenu />
@@ -26,6 +27,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </header>
   );
 };
 
