@@ -9,7 +9,7 @@ const ManufacturingSection = () => {
          <div className=' py-[80px] px-4" bg-[#F6F4EE]'>
                <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
                  <div className="grid grid-cols-3 gap-10">
-                   <div className="relative group flex flex-col gap-[30px] ">
+                   <div className="relative group flex flex-col gap-[30px] cursor-pointer">
                      <div className="relative min-h-[440px]">
                        <Image
                          src={"/images/global/image 11.png"}
@@ -28,7 +28,7 @@ const ManufacturingSection = () => {
                        </p>
                      </div>
                    </div>
-                   <div className="relative group flex flex-col gap-[30px] ">
+                   <div className="relative group flex flex-col gap-[30px] cursor-pointer">
                      <div className="relative min-h-[440px]">
                        <Image
                          src={"/images/global/image 22.png"}
@@ -47,7 +47,7 @@ const ManufacturingSection = () => {
                        </p>
                      </div>
                    </div>
-                   <div className="relative group flex flex-col gap-[30px] ">
+                   <div className="relative group flex flex-col gap-[30px] cursor-pointer ">
                      <div className="relative min-h-[440px]">
                        <Image
                          src={"/images/global/image 26.png"}
