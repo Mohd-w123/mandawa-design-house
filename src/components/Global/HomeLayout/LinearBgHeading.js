@@ -7,7 +7,7 @@ const LinearBgHeading = ({text}) => {
       style={{ backgroundImage: "url('/images/global/linearHeadingBG.png') " }}
     >
       <div className="flex justify-center">
-        <h2 className="text-white font-belleza text-6xl">{text}</h2>
+        <h2 className="text-white font-belleza text-3xl md:text-5xl lg:text-6xl text-center">{text}</h2>
       </div>
     </div>
   );
