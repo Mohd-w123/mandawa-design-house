@@ -1,13 +1,16 @@
+import MainLayout from '@/Layouts/MainLayout';
 import React from 'react'
 
-const contact = () => {
+const Contact = () => {
   return (
-
-
 <>
-<h1>danish  </h1>
+
 </>
   )
 }
 
-export default contact
+Contact.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
+};
+
+export default Contact
