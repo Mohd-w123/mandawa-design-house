@@ -13,16 +13,17 @@ import ProductionDrawing from "@/components/Global/HomeLayout/ProductionDrawing/
 import VisionMission from "@/components/Global/HomeLayout/VisionMission/VisionMission";
 import WhyChooseUs from "@/components/Global/HomeLayout/WhyChooseUs/WhyChooseUs";
 import WoodenMachinery from "@/components/Global/HomeLayout/WoodenMachinery/WoodenMachinery";
+import HomeLayout from "@/Layouts/HomeLayout";
 
 
-export default function Home() {
+ function Home() {
   return (
    <>
    <Hero/>
    <MandawaHomeImage/>
     <VisionMission/>
    <FurnitureCollection/>
-   {/* <OrganizationChart/> */}
+   <OrganizationChart/>
    <OurUnits/>
     <ManufacturingSection/>
     <WoodenMachinery/>
@@ -36,3 +37,11 @@ export default function Home() {
    </>
   );
 }
+
+
+Home.getLayout = function getLayout(page) {
+  return <HomeLayout>{page}</HomeLayout>;
+};
+
+
+export default Home

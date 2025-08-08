@@ -36,7 +36,7 @@ const VisionMission = () => {
 
       {/* Image Section - Full height & width */}
       <div className="flex gap-2 h-[600PX]">
-        <div className="relative lg:top-[75px] flex-1">
+        <div className="relative h-[480px] lg:top-[75px] flex-1">
           <Image
             src="/images/global/image 6.png"
             alt="working images"
@@ -44,7 +44,7 @@ const VisionMission = () => {
             className="object-cover rounded-lg"
           />
         </div>
-        <div className="flex-1 relative">
+        <div className="flex-1 h-[480px] relative">
           <Image
             src="/images/global/rectangle 15.png"
             alt="machine image"

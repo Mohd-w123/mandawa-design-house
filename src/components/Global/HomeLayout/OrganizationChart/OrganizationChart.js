@@ -3,22 +3,31 @@ import React from "react";
 
 const OrganizationChart = () => {
   return (
-    <section className="min-h-[1513px] bg-repeat-y bg-center bg-cover py-[80px] px-4" style={{backgroundImage : "url('/images/global/Group.png')"}}>
-      <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
-        <div className="flex justify-center">
-          <h2 className='text-6xl font-belleza text-[#191919] text-center"'>
-            Organization Chart
-          </h2>
-        </div>
-        <div className="relative min-h-[1223px]">
-          <Image
-            src={"/images/global/organizationChart.png"}
-            fill
-            alt="Organization Chart"
-          />
-        </div>
-      </div>
-    </section>
+   <section
+  className="py-[60px] px-4 bg-cover bg-center bg-repeat-y"
+  style={{ backgroundImage: "url('/images/global/Group.png')" }}
+>
+  <div className="max-w-[1280px] mx-auto flex flex-col gap-[40px]">
+    {/* Section Heading */}
+    <div className="text-center">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-belleza text-[#191919]">
+        Organization Chart
+      </h2>
+    </div>
+
+    {/* Image Container */}
+    <div className="relative w-full min-h-[500px] md:min-h-[800px] lg:min-h-[1000px]">
+      <Image
+        src="/images/global/organizationChart.png"
+        alt="Organization Chart"
+        fill
+        className="object-contain"
+        priority
+      />
+    </div>
+  </div>
+</section>
+
   );
 };
 
