@@ -20,19 +20,19 @@ export default function Home() {
    <>
    <Hero/>
    <MandawaHomeImage/>
-   <VisionMission/>
+    <VisionMission/>
    <FurnitureCollection/>
-   <OrganizationChart/>
+   {/* <OrganizationChart/> */}
    <OurUnits/>
-   <ManufacturingSection/>
-   <WoodenMachinery/>
+    <ManufacturingSection/>
+    <WoodenMachinery/>
    <OurSetUp/>
    <FurnitureDesigning/>
    <ConceptOfDrawing/>
    <ProductionDrawing/>
    <DesigningSoftware/>
    <OurClients/>
-   <WhyChooseUs/>
+   <WhyChooseUs/>   
    </>
   );
 }

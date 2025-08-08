@@ -3,10 +3,15 @@ import React from "react";
 
 const FurnitureDesignCards = ({ cards }) => {
   return (
-    <div className="flex flex-col gap-3.5 cursor-pointer">
-      <div className="bg-white">
-        <Image src={cards.image} width={413} height={426} alt="Products" />
-      </div>
+    <div className="flex flex-col gap-3.5 cursor-pointer ">
+    <div className="relative w-full aspect-[413/426] bg-white">
+  <Image
+    src={cards.image}
+    alt="Products"
+    fill
+    className="object-contain"
+  />
+</div>
     </div>
   );
 };
