@@ -4,7 +4,7 @@ const VisionMission = () => {
   return (
 <section className="py-[80px] px-4 bg-[#F6F4EE]">
   <div className="max-w-[1280px] mx-auto">
-    <div className="grid lg:grid-cols-2 gap-10 xl:gap-20 items-center">
+    <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center">
       
       {/* Text Section */}
       <div className="flex flex-col gap-3.5 text-left">
@@ -35,10 +35,10 @@ const VisionMission = () => {
       </div>
 
       {/* Image Section - Full height & width */}
-      <div className="flex gap-2 h-[600PX]">
+      <div className="flex gap-2 xl:h-[600PX]">
         <div className="relative h-[480px] lg:top-[75px] flex-1">
           <Image
-            src="/images/global/image 6.png"
+            src={"/images/global/image6.png"}
             alt="working images"
             fill
             className="object-cover rounded-lg"
@@ -46,7 +46,7 @@ const VisionMission = () => {
         </div>
         <div className="flex-1 h-[480px] relative">
           <Image
-            src="/images/global/rectangle 15.png"
+            src={"/images/global/machineImage.png"}
             alt="machine image"
             fill
             className="object-cover rounded-lg"

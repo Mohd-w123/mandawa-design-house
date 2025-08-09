@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
  
 return (
-<section className="py-[80px] px-4 bg-[#F6F4EE]">
+<section className="pb-[80px] pt-[40px] md:py-[80px]  px-4 bg-[#F6F4EE]">
   <div className="max-w-[1280px] mx-auto">
     {/* Section Heading */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-[60px] text-center">
@@ -27,7 +27,7 @@ return (
         width={80}
         height={80}
         alt="flower"
-        className="w-20  lg:w-20 h-auto"
+        className="w-20 hidden md:inline lg:w-20 h-auto"
       />
     </div>
 
@@ -36,7 +36,7 @@ return (
       {/* Left Image */}
       <div className="w-full md:w-[200px] lg:w-[288px] flex-shrink-0">
         <Image
-          src="/images/global/image 4.png"
+          src={"/images/global/image 4.png"}
           alt="mandawa design house"
           width={288}
           height={500}
@@ -69,7 +69,7 @@ return (
       {/* Right Image */}
       <div className="w-full md:w-[200px] lg:w-[288px] flex-shrink-0">
         <Image
-          src="/images/global/rectangle 14.png"
+          src={"/images/global/elephant.png"}
           alt="person on an elephant"
           width={288}
           height={500}
