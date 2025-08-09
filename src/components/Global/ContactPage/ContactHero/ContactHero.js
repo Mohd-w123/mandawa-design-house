@@ -15,7 +15,7 @@ const ContactHero = () => {
         {/* Hero Image */}
         <div className="relative hidden lg:block w-full h-[300px] sm:h-[400px] md:h-[460px]">
           <Image
-            src="/images/global/Rectangle 16.png"
+            src="/images/global/contacthero.png"
             alt="Contact page hero"
             fill
             className="object-cover rounded-md"
