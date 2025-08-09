@@ -16,11 +16,10 @@ const poppins = Poppins({
 });
 
 export default function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page)
   return (
     <main className={`${belleza.variable} ${poppins.variable}`}>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer/>
+     {  getLayout(<Component {...pageProps} />)}
     </main>
   );
 }
