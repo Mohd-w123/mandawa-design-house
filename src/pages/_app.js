@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
-import Navbar from "@/components/Global/Navbar/Navbar";
+
 import { Belleza, Poppins } from "next/font/google";
-import Footer from "@/components/Global/Footer/Footer";
+
 
 const belleza = Belleza({
   variable: "--font-belleza",
