@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import FurnitureCollectionData from "@/data/FurnitureCollectionData.json";
-import FurnitureCards from "./FurnitureCards";
 import Button from "../../Buttons";
 
 const FurnitureCollection = () => {
@@ -27,12 +26,15 @@ const FurnitureCollection = () => {
     {/* Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {FurnitureCollectionData.map((data, index) => (
-        <div key={index} className="flex flex-col items-center text-center">
-          <img
+        <div key={index} className=" flex flex-col items-center text-center">
+          <div className="relative w-full h-[400px]">
+            <Image
             src={data.image}
             alt={data.title}
+            fill
             className="w-full h-[400px] object-contain"
           />
+          </div>
           <h3 className="mt-4 text-lg sm:text-xl md:text-2xl font-belleza">{data.title}</h3>
           <p className="mt-2 text-gray-500 font-poppins max-w-[300px] text-sm sm:text-base">
             {data.description}

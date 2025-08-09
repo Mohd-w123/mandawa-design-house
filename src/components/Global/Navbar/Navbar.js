@@ -3,6 +3,7 @@ import Link from "next/link";
 import Button from "../Buttons";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <div className="flex items-center">
-                <img src="/images/global/mandawa-design-house.png" alt="Mandawa Design House" className="h-[32px]" />
+                <Image width={136} height={32} src="/images/global/mandawa-design-house.png" alt="Mandawa Design House" className="h-[32px]" />
               </div>
             </Link>
           </div>

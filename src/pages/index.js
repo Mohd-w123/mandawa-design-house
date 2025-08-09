@@ -13,7 +13,8 @@ import ProductionDrawing from "@/components/Global/HomePage/ProductionDrawing/Pr
 import VisionMission from "@/components/Global/HomePage/VisionMission/VisionMission";
 import WhyChooseUs from "@/components/Global/HomePage/WhyChooseUs/WhyChooseUs";
 import WoodenMachinery from "@/components/Global/HomePage/WoodenMachinery/WoodenMachinery";
-import HomeLayout from "@/Layouts/HomeLayout";
+
+import MainLayout from "@/Layouts/MainLayout";
 
 
  function Home() {
@@ -40,7 +41,7 @@ import HomeLayout from "@/Layouts/HomeLayout";
 
 
 Home.getLayout = function getLayout(page) {
-  return <HomeLayout>{page}</HomeLayout>;
+  return <MainLayout>{page}</MainLayout>;
 };
 
 

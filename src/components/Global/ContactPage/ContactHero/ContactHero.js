@@ -7,15 +7,15 @@ const ContactHero = () => {
       <div className="max-w-[1280px] mx-auto flex flex-col gap-[40px]">
         {/* Heading */}
         <div className="flex justify-center items-center">
-          <h1 className="font-belleza text-4xl md:text-5xl lg:text-6xl text-[#191919] text-center">
+          <h1 className="font-belleza text-5xl md:text-5xl lg:text-6xl text-[#191919] text-center">
             Contact Us
           </h1>
         </div>
 
         {/* Hero Image */}
-        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[460px]">
+        <div className="relative hidden lg:block w-full h-[300px] sm:h-[400px] md:h-[460px]">
           <Image
-            src="/images/global/Rectangle 16.png"
+            src="/images/global/contacthero.png"
             alt="Contact page hero"
             fill
             className="object-cover rounded-md"
