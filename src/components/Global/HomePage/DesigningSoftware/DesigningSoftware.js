@@ -41,30 +41,31 @@ export default function DesigningSoftware() {
         {/* Slider */}
         <Swiper
           modules={[Autoplay]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          speed={600}
-          spaceBetween={30}
-          slidesPerGroup={1} 
-          breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="w-full"
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+  }}
+  loop={true}
+  speed={500}
+  spaceBetween={20}
+  slidesPerView={3} // Always 3 visible
+  slidesPerGroup={3} // Move 3 at a time
+  breakpoints={{
+    320: { slidesPerView: 3, slidesPerGroup: 3 },
+    640: { slidesPerView: 3, slidesPerGroup: 3 },
+    1024: { slidesPerView: 3, slidesPerGroup: 3 },
+  }}
+  className="w-full"  
         >
           {softwareList.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center gap-4">
                 <Image
-                  src={item.src}
-                  width={160}
-                  height={160}
-                  alt={item.name}
-                  className="w-[120px] sm:w-[100px]"
+                 src={item.src}
+  width={100}
+  height={100}
+  alt={item.name}
+  className="w-[70px] sm:w-[80px] md:w-[100px]"
                 />
                 <p className="font-belleza text-[22px] md:text-[28px] text-[#191919] text-center">
                   {item.name}

@@ -42,37 +42,39 @@ export default function OurClients() {
         </div>
 
         {/* Swiper Slider */}
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          speed={500} 
-          slidesPerView={6} 
-          spaceBetween={20}
-          breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 3 },
-            1024: { slidesPerView: 6 },
-          }}
-          className="w-full"
-        >
-          {clientLogos.map((src, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex justify-center">
-                <Image
-                  src={src}
-                  width={160}
-                  height={160}
-                  alt={`client company logo ${index + 1}`}
-                  className="w-[120px] sm:w-[100px]"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <Swiper
+  modules={[Autoplay]}
+  autoplay={{
+    delay: 1000,
+    disableOnInteraction: false,
+  }}
+  loop={true}
+  speed={500}
+    slidesPerView={3} // Always 3 visible
+  slidesPerGroup={3} // Move 3 at a time
+  spaceBetween={20}
+  breakpoints={{
+    0: { slidesPerView: 3 },       // Mobile
+    640: { slidesPerView: 3 },     // Tablet
+    1024: { slidesPerView: 6 },    // Desktop
+  }}
+  className="w-full"
+>
+  {clientLogos.map((src, index) => (
+    <SwiperSlide key={index}>
+      <div className="flex justify-center">
+        <Image
+          src={src}
+          width={160}
+          height={160}
+          alt={`client company logo ${index + 1}`}
+          className="w-[80px] sm:w-[90px] md:w-[100px]" // smaller sizes on small screens
+        />
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </div>
     </section>
   );
