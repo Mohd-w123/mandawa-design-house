@@ -4,10 +4,11 @@ import Image from "next/image";
 
 const WoodenMachinery = () => {
   return (
-    <section>
-      <LinearBgHeading text={"WOODEN MACHINERY"} />
+<section>
+  <LinearBgHeading text={"WOODEN MACHINERY"} />
   <div className="py-[80px] px-4">
     <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
+      
       {/* First Row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
         {[
@@ -16,10 +17,15 @@ const WoodenMachinery = () => {
         ].map((item, i) => (
           <div
             key={i}
-            className="relative group  flex flex-col gap-4 sm:gap-[30px] cursor-pointer"
+            className="relative group flex flex-col gap-4 sm:gap-[30px] cursor-pointer"
           >
-            <div className="relative  min-h-[320px]  sm:min-h-[440px]">
-              <Image src={item.img} fill alt={item.title} />
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={item.img}
+                fill
+                alt={item.title}
+                className="object-cover"
+              />
               <div className="absolute top-0 w-full h-full flex justify-center items-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <h4 className="mt-5 group-hover:mt-0 transition-all duration-300 font-belleza text-[18px] sm:text-[26px] lg:text-[34px] text-white text-center px-2">
                   {item.title}
@@ -46,8 +52,13 @@ const WoodenMachinery = () => {
             key={i}
             className="relative group flex flex-col gap-4 sm:gap-[30px] cursor-pointer"
           >
-            <div className="relative min-h-[350px] sm:min-h-[440px]">
-              <Image src={item.img} fill alt={item.title} />
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={item.img}
+                fill
+                alt={item.title}
+                className="object-cover"
+              />
               <div className="absolute top-0 w-full h-full flex justify-center items-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <h4 className="mt-5 group-hover:mt-0 transition-all duration-300 font-belleza text-[18px] sm:text-[26px] lg:text-[34px] text-white text-center px-2">
                   {item.title}
@@ -73,8 +84,13 @@ const WoodenMachinery = () => {
             key={i}
             className="relative group flex flex-col gap-4 sm:gap-[30px] cursor-pointer"
           >
-            <div className="relative min-h-[300px] sm:min-h-[440px]">
-              <Image src={item.img} fill alt={item.title} />
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={item.img}
+                fill
+                alt={item.title}
+                className="object-cover"
+              />
               <div className="absolute top-0 w-full h-full flex justify-center items-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <h4 className="mt-5 group-hover:mt-0 transition-all duration-300 font-belleza text-[18px] sm:text-[26px] lg:text-[34px] text-white text-center px-2">
                   {item.title}
@@ -89,9 +105,11 @@ const WoodenMachinery = () => {
           </div>
         ))}
       </div>
+      
     </div>
   </div>
 </section>
+
 
   );
 };
