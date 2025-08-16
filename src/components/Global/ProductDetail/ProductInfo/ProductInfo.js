@@ -7,20 +7,20 @@ const ProductInfo = () => {
     <section className="pb-20 px-4">
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(500px,760px)_minmax(400px,460px)] gap-10 lg:gap-[60px]">
-          {/* LEFT: Images */}
+
           <div className="lg:grid lg:grid-cols-[120px_minmax(300px,580px)] lg:gap-5">
-            {/* Big Image - on top for mobile/tablet, on the right for desktop */}
+
             <div className="relative w-full h-[30vh] sm:h-[50vh] md:h-[75vh] lg:h-[580px] order-1 lg:order-2 bg-[#fff]">
               <Image
                 src={"/images/global/productchair.png"}
                 fill
                 alt="product big image"
-                className="object-contain" /* show entire image; no crop */
+                className="object-contain"
                 priority
               />
             </div>
 
-            {/* Thumbnails - below on mobile/tablet, left column on desktop */}
+  
             <div className="order-2 lg:order-1 mt-4 lg:mt-0 flex gap-3 overflow-x-auto lg:flex-col lg:overflow-y-auto lg:h-[580px]">
               <div className="relative w-[100px] h-[100px] sm:w-[110px] sm:h-[110px] lg:w-[120px] lg:h-[120px] flex-shrink-0">
                 <Image
@@ -57,7 +57,6 @@ const ProductInfo = () => {
             </div>
           </div>
 
-          {/* RIGHT: Product Details */}
           <div className="flex flex-col gap-6 px-2 lg:px-0">
             <div className="flex flex-col gap-2 pb-5">
               <p className="text-[#666666] font-poppins text-sm">#FIEV-10271</p>
