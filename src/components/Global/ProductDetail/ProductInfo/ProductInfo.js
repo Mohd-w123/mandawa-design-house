@@ -10,7 +10,7 @@ const ProductInfo = () => {
           {/* LEFT: Images */}
           <div className="lg:grid lg:grid-cols-[120px_minmax(300px,580px)] lg:gap-5">
             {/* Big Image - on top for mobile/tablet, on the right for desktop */}
-            <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[75vh] lg:h-[580px] order-1 lg:order-2 bg-[#fff]">
+            <div className="relative w-full h-[30vh] sm:h-[50vh] md:h-[75vh] lg:h-[580px] order-1 lg:order-2 bg-[#fff]">
               <Image
                 src={"/images/global/productchair.png"}
                 fill
