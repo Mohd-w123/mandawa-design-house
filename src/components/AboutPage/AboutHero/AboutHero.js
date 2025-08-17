@@ -10,11 +10,11 @@ const AboutHero = () => {
               About
             </h2>
             <p className="font-poppins text-base md:text-lg text-[#666666]">
-              Mandawa Design House is a premier exporter of exquisite furniture
+              Mandawa Design House is a premier exporter of exquisite furniture
               crafted from wood, marble, metal, & rattan. Based in India, we are
               dedicated to blend timeless craftsmanship with contemporary &
-              artistic furniture designs, delivering durable &  luxury furniture
-               pieces to our clients across the globe.
+              artistic furniture designs, delivering durable & luxury furniture
+              pieces to our clients across the globe.
             </p>
             <p className="font-poppins text-base md:text-lg text-[#666666]">
               At Mandawa Design House, we believe that furniture should tell a
@@ -30,9 +30,9 @@ const AboutHero = () => {
               aesthetics and handcrafted soul. Rooted in our core values of
               sustainability and ethical sourcing, we are committed to making
               responsible choices — from the materials we select to the
-              communities we support. With Mandawa Design House, you're not just
-              choosing furniture, you're choosing a more thoughtful way to live
-              and design.
+              communities we support. With Mandawa Design House, {`you're`} not
+              just choosing furniture, {`you're`} choosing a more thoughtful way
+              to live and design.
             </p>
           </div>
 

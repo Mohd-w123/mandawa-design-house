@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const BlogModal = ({ blog, onClose }) => {
   if (!blog) return null;
 
@@ -10,15 +12,27 @@ const BlogModal = ({ blog, onClose }) => {
         >
           &times;
         </button>
-        <img
-          src={blog.image}
-          alt={blog.title}
-          className="w-full h-48 sm:h-64 object-cover rounded mb-4"
-        />
-        <div className="mb-2 relative">
-          <span className="bg-white text-[16px] px-[16px] py-[8px] w-fit absolute left-[24px] top-[-72px] font-poppins">News</span>
-          <span className="text-[14px] font-poppins text-[#666666]">{blog.date}</span>
+
+        {/* Image wrapper */}
+        <div className="relative w-full h-48 sm:h-64 mb-4 rounded overflow-hidden">
+          <Image
+            src={blog.image}
+            alt={blog.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, 640px"
+          />
         </div>
+
+        <div className="mb-2 relative">
+          <span className="bg-white text-[16px] px-[16px] py-[8px] w-fit absolute left-[24px] top-[-72px] font-poppins">
+            News
+          </span>
+          <span className="text-[14px] font-poppins text-[#666666]">
+            {blog.date}
+          </span>
+        </div>
+
         <h2 className="font-belleza text-[24px] text-[#191919]">{blog.title}</h2>
         <p className="text-[14px] font-poppins text-[#666666]">{blog.fullText}</p>
       </div>
