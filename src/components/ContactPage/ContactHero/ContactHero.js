@@ -1,21 +1,19 @@
 import Image from "next/image";
 import React from "react";
 
-const ContactHero = () => {
+const ContactHero = ({title, imageUrl}) => {
   return (
     <section className="py-[60px] px-4">
       <div className="max-w-[1280px] mx-auto flex flex-col gap-[40px]">
-        {/* Heading */}
         <div className="flex justify-center items-center">
           <h1 className="font-belleza text-5xl md:text-5xl lg:text-6xl text-[#191919] text-center">
-            Contact Us
+            {title}
           </h1>
         </div>
 
-        {/* Hero Image */}
-        <div className="relative hidden lg:block w-full h-[300px] sm:h-[400px] md:h-[460px]">
+        <div className="relative hidden lg:block w-full h-[330px] sm:h-[330px] md:h-[330px]">
           <Image
-            src="/images/global/contacthero.png"
+            src={imageUrl}
             alt="Contact page hero"
             fill
             className="object-cover rounded-md"

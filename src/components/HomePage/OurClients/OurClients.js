@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,7 +43,7 @@ export default function OurClients() {
       <Swiper
   modules={[Autoplay]}
   autoplay={{
-    delay: 1000,
+    delay: 2000,
     disableOnInteraction: false,
   }}
   loop={true}
