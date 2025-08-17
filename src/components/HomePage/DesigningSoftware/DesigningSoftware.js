@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +7,12 @@ import "swiper/css";
 
 const softwareList = [
   { src: "/images/global/image52.png", name: "Rhinoceros" },
+  { src: "/images/global/image53.png", name: "AutoCAD" },
+  { src: "/images/global/image54.png", name: "Sketchup" },
+  { src: "/images/global/image55.png", name: "5d render" },
+  { src: "/images/global/image56.png", name: "Photoshop" },
+  { src: "/images/global/image57.png", name: "Adobe Illustrator" },
+    { src: "/images/global/image52.png", name: "Rhinoceros" },
   { src: "/images/global/image53.png", name: "AutoCAD" },
   { src: "/images/global/image54.png", name: "Sketchup" },
   { src: "/images/global/image55.png", name: "5d render" },
@@ -27,7 +31,7 @@ export default function DesigningSoftware() {
 
   return (
     <section
-      className="bg-no-repeat bg-center bg-cover py-[80px] px-4 overflow-hidden"
+      className="bg-no-repeat bg-center bg-cover pb-[80px] md:py-[80px] px-4 overflow-hidden"
       style={{ backgroundImage: "url('/images/global/Group.png')" }}
     >
       <div className="max-w-[1280px] m-auto flex flex-col gap-20 overflow-hidden">
@@ -39,24 +43,24 @@ export default function DesigningSoftware() {
         </div>
 
         {/* Slider */}
-        <Swiper
-          modules={[Autoplay]}
+      <Swiper
+  modules={[Autoplay]}
   autoplay={{
     delay: 2000,
     disableOnInteraction: false,
   }}
   loop={true}
   speed={500}
-  spaceBetween={20}
-  slidesPerView={3} // Always 3 visible
+    slidesPerView={3} // Always 3 visible
   slidesPerGroup={3} // Move 3 at a time
+  spaceBetween={20}
   breakpoints={{
-    320: { slidesPerView: 3, slidesPerGroup: 3 },
-    640: { slidesPerView: 3, slidesPerGroup: 3 },
-    1024: { slidesPerView: 3, slidesPerGroup: 3 },
+    0: { slidesPerView: 3 },       // Mobile
+    640: { slidesPerView: 3 },     // Tablet
+    1024: { slidesPerView: 6 },    // Desktop
   }}
-  className="w-full"  
-        >
+  className="w-full"
+>
           {softwareList.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center gap-4">

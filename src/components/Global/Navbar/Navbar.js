@@ -1,6 +1,5 @@
-"use client";
 import Link from "next/link";
-import Button from "../Buttons";
+import Button from "@/components/Global/Buttons";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";

@@ -1,7 +1,7 @@
 import React from "react";
 import furnitureDesigningData from "@/data/furnitureDesigningData.json";
 import FurnitureDesignCards from "./FurnitureDesignCards";
-import Button from "../../Buttons";
+import Button from "@/components/Global/Buttons";
 
 const FurnitureDesigning = () => {
   return (

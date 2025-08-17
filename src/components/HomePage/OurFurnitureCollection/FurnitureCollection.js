@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import FurnitureCollectionData from "@/data/FurnitureCollectionData.json";
-import Button from "../../Buttons";
+import Button from "@/components/Global/Buttons";
 
 const FurnitureCollection = () => {
   return (

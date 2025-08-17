@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Button from "../../Buttons";
+import Button from "@/components/Global/Buttons";
 
 const ProductInfo = () => {
   return (
@@ -20,7 +20,7 @@ const ProductInfo = () => {
               />
             </div>
 
-  
+
             <div className="order-2 lg:order-1 mt-4 lg:mt-0 flex gap-3 overflow-x-auto lg:flex-col lg:overflow-y-auto lg:h-[580px]">
               <div className="relative w-[100px] h-[100px] sm:w-[110px] sm:h-[110px] lg:w-[120px] lg:h-[120px] flex-shrink-0">
                 <Image
